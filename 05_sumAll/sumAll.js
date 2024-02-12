@@ -16,7 +16,7 @@ const sumAll = function (int1, int2) {
     int2 = temp;
   }
   //An alternative way to swap the values using array destructuring syntax
-  // if (min > max) [min, max] = [max, min];
+  // if (int1 > int2) {[int1, int2] = [int2, int1]};
 
   let sum = 0;
   counter = int1;
