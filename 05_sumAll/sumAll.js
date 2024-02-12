@@ -7,12 +7,16 @@ const sumAll = function (int1, int2) {
   ) {
     return "ERROR";
   }
+  // An alternative way to check if values are numbers:
+  // if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
 
   if (int2 < int1) {
-    temp = int1;
+    const temp = int1;
     int1 = int2;
     int2 = temp;
   }
+  //An alternative way to swap the values using array destructuring syntax
+  // if (min > max) [min, max] = [max, min];
 
   let sum = 0;
   counter = int1;
